@@ -1,0 +1,92 @@
+input[type=text],
+input[type=password] {
+    border: 2px solid #EEE;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+/* Style signup button */
+.signupbtn {
+    background-color: #EEE;
+    color: #223;
+    cursor: pointer;
+    padding: 14px 20px;
+    width: 100%;
+}
+
+/* Style cancel button */
+.cancelbtn {
+    background-color: #223;
+    border: 1px solid black;
+    color: #CF6;
+    padding: 14px 20px;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 100%
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Define the modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #FFF;
+    border: 1px solid #999;
+    margin: 5% auto 15% auto;
+    width: 100%;
+}
+
+/* Define the close button*/
+.close {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+}
+
+/* Define close hover and focus effects */
+.close:hover,
+.close:focus {
+    color: #CF6;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media screen and (min-width: 767px) {
+    .modal-content {
+        width: 50%;
+    }
+
+    .cancelbtn,
+    .signupbtn {
+        width: 50%;
+    }
+}

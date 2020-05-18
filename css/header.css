@@ -1,0 +1,139 @@
+header {
+    background-color: #FFF;
+    padding-top: 10px;
+}
+
+header ul {
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+header li a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+header li a:hover,
+.menu-btn:hover {
+    background-color: #223;
+    color: #CF6;
+    transition: all 0.3s ease 0s;
+}
+
+/* Menu */
+.menu ul {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    z-index: 1;
+}
+
+/* Menu icon */
+.menu-icon {
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+}
+
+.menu-icon .nav-icon:before,
+.menu-icon .nav-icon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.menu-icon .nav-icon:before {
+    top: 8px;
+}
+
+.menu-icon .nav-icon:after {
+    top: -8px;
+}
+
+/* Menu btn */
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .menu ul {
+    max-height: 270px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+    top:0;
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+    top:0;
+    transform: rotate(45deg);
+}
+
+.main-signupbtn {
+    margin: 20px 20px 20px 40px;
+}
+
+/* Navigation logo */
+.logo {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+}
+
+@media screen and (min-width: 767px) {
+    header {
+        padding: 1rem 10%;
+    }
+
+    header li {
+        float: left;
+    }
+
+    .menu ul {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .main-signupbtn {
+        float: right;
+        margin: 20px 20px 20px 40px;
+    }
+}
+

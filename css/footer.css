@@ -1,0 +1,121 @@
+footer {
+    background-color: #999;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    font: bold 14px sans-serif;
+    padding: 3.438rem 3.125rem;
+    margin-top: 5rem;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    margin-bottom: 2.5rem;
+}
+
+/* Footer links */
+.footer-left a:hover {
+    color: #CF6;
+    transition: all 0.3s ease 0s;
+}
+
+/* Footer center */
+.footer-center i {
+    background-color: #223;
+    border: 1px solid #223;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 1.563rem;
+    height: 38px;
+    line-height: 2.625rem;
+    margin: 0.625rem 0.938rem;
+    text-align: center;
+    width: 38px;
+    vertical-align: middle;
+}
+
+.footer-center i.fa-envelope {
+    font-size: 1.063rem;
+    line-height: 2.375rem;
+}
+
+.footer-center i:hover {
+    background-color: #FFF;
+    color: #223;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-center p {
+    color: #223;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.footer-center p span {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.footer-center p a {
+    color:  #CF6;
+    text-decoration: none;
+}
+
+/* Footer right */
+.footer-right {
+    margin-top: 1.563rem;
+}
+
+.footer-right a {
+    background-color: #223;
+    border: 1px solid #223;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25rem;
+    height: 35px;
+    line-height: 2.188rem;
+    margin-right: 0.188rem;
+    text-align: center;
+    width: 35px;
+}
+
+.footer-right a:hover {
+    background-color: #FFF;
+    color: #223;
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (min-width: 767px) {
+
+    footer {
+        font: bold 1rem sans-serif;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-left {
+        width: 40%;
+    }
+
+    /* Footer center */
+    .footer-center {
+        width: 35%;
+    }
+
+    /* Footer right */
+    .footer-right {
+        text-align: end;
+        width: 20%;
+    }
+}
