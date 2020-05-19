@@ -28,6 +28,11 @@ footer {
     text-align: center;
 }
 
+.image-caption {
+    padding: 10px;
+    text-align: center;
+}
+
 @media screen and (min-width: 767px) {
     .wrapper {
         display: grid;

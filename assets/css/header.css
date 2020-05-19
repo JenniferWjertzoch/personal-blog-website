@@ -4,7 +4,7 @@ header {
 }
 
 header ul {
-    background-color: #fff;
+    background-color: #FFF;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -29,7 +29,6 @@ header li a:hover,
 .menu ul {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
     z-index: 1;
 }
 
@@ -48,7 +47,6 @@ header li a:hover,
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s ease-out;
     width: 25px;
 }
 
@@ -85,12 +83,12 @@ header li a:hover,
 }
 
 .menu-btn:checked ~ .menu-icon .nav-icon:before {
-    top:0;
+    top: 0;
     transform: rotate(-45deg);
 }
 
 .menu-btn:checked ~ .menu-icon .nav-icon:after {
-    top:0;
+    top: 0;
     transform: rotate(45deg);
 }
 
@@ -133,7 +131,6 @@ header li a:hover,
 
     .main-signupbtn {
         float: right;
-        margin: 20px 20px 20px 40px;
     }
 }
 
