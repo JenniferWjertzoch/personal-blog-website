@@ -20,15 +20,15 @@ input[type=password] {
 /* Style cancel button */
 .cancelbtn {
     background-color: #223;
-    border: 1px solid black;
     color: #CF6;
     padding: 14px 20px;
 }
 
 .cancelbtn,
 .signupbtn {
+    border: 1px solid #223;
     float: left;
-    width: 100%
+    width: 100%;
 }
 
 /* Add padding to container elements */

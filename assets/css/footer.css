@@ -19,23 +19,18 @@ footer {
 }
 
 /* Footer center */
-.footer-center p {
-    color: #223;
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
+.footer-center-elements {
+    display: flex;
 }
 
-.footer-center p span {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: normal;
-    line-height: 2;
-}
-
-.footer-center p a {
+.footer-center-elements a {
     color: #CF6;
-    text-decoration: none;
+}
+
+.footer-center svg {
+    height: auto;
+    margin-right: 20px;
+    width: 30px;
 }
 
 /* Footer right */
@@ -46,7 +41,15 @@ footer {
 .footer-right a {
     cursor: pointer;
     display: inline-block;
-    width: 35px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.footer-right svg path:hover {
+    fill: #CF6;
+    transition: all 0.3s ease 0s;
 }
 
 @media screen and (min-width: 767px) {
