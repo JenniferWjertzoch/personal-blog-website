@@ -4,6 +4,7 @@
 @import 'signup-modal.css';
 
 .wrapper {
+    /* What does this? And why is it necessary? */
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas: "header"
@@ -34,6 +35,7 @@ footer {
 }
 
 @media screen and (min-width: 767px) {
+    /* I don't get why you use grid on the whole page */
     .wrapper {
         display: grid;
         height: 100%;
@@ -56,6 +58,7 @@ footer {
     }
 }
 
+/* Which rules are valid above 1025px and why? */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     .wrapper {
         display: grid;

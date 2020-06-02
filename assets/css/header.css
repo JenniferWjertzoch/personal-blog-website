@@ -34,7 +34,11 @@ header li a:hover,
 
 /* Menu icon */
 .menu-icon {
+    /* For accessibility reasons cursor: pointer should only be used on links
+     https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b */
     cursor: pointer;
+
+    /* Since this causes side effects you should think about a better approach */
     float: right;
     margin: 10px;
     padding: 28px 20px;
@@ -97,6 +101,7 @@ header li a:hover,
 }
 
 /* Navigation logo */
+/* See comments on menu-icon, they are also valid for this */
 .logo {
     cursor: pointer;
     display: block;
@@ -134,3 +139,6 @@ header li a:hover,
     }
 }
 
+/* Some general advice for using float. Float was created to be used mainly
+for images. So they can float around text. Using float to position elements
+is something you shouldn't do anymore in times of flexbox and grid */
