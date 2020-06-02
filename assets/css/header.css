@@ -3,33 +3,25 @@ header {
     padding-top: 10px;
 }
 
-header ul {
-    background-color: #FFF;
-    list-style: none;
-    margin: 0;
+/* Menu */
+.menu {
+    clear: both;
+    max-height: 0;
     overflow: hidden;
-    padding: 0;
+    padding: 10px;
+    z-index: 1;
 }
 
-header li a {
+.menu a {
     display: block;
-    margin-top: 15px;
-    padding: 10px 15px;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
-header li a:hover,
-.menu-btn:hover {
+.menu a:hover {
     background-color: #223;
     color: #CF6;
     transition: all 0.3s ease 0s;
-}
-
-/* Menu */
-.menu ul {
-    clear: both;
-    max-height: 0;
-    z-index: 1;
 }
 
 /* Menu icon */
@@ -69,29 +61,30 @@ header li a:hover,
     top: -8px;
 }
 
-/* Menu btn */
-.menu-btn {
+/* Invisible menu checkbox */
+.menu-checkbox {
     display: none;
 }
 
-.menu-btn:checked ~ .menu ul {
+.menu-checkbox:checked ~ .menu {
     max-height: 270px;
 }
 
-.menu-btn:checked ~ .menu-icon .nav-icon {
+.menu-checkbox:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
 
-.menu-btn:checked ~ .menu-icon .nav-icon:before {
+.menu-checkbox:checked ~ .menu-icon .nav-icon:before {
     top: 0;
     transform: rotate(-45deg);
 }
 
-.menu-btn:checked ~ .menu-icon .nav-icon:after {
+.menu-checkbox:checked ~ .menu-icon .nav-icon:after {
     top: 0;
     transform: rotate(45deg);
 }
 
+/* Menu signup button */
 .main-signupbtn {
     margin: 20px 20px 20px 40px;
 }
@@ -115,14 +108,14 @@ header li a:hover,
         padding: 1rem 10%;
     }
 
-    header li {
-        float: left;
-    }
-
-    .menu ul {
+    .menu {
         clear: none;
         float: right;
         max-height: none;
+    }
+
+    .menu a {
+        float: left;
     }
 
     .menu-icon {

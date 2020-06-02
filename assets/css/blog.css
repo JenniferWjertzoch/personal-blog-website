@@ -3,7 +3,7 @@
 @import 'layout.css';
 @import 'signup-modal.css';
 
-.wrapper {
+body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas: "header"
@@ -24,6 +24,10 @@ footer {
     grid-area: footer;
 }
 
+.about-me-content {
+    padding: 20px;
+}
+
 .headline-social-media {
     text-align: center;
 }
@@ -34,7 +38,7 @@ footer {
 }
 
 @media screen and (min-width: 767px) {
-    .wrapper {
+    body {
         display: grid;
         height: 100%;
         grid-template-columns: 3fr 1fr;
@@ -57,7 +61,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-    .wrapper {
+    body {
         display: grid;
         height: 100%;
         grid-template-columns: auto 350px;

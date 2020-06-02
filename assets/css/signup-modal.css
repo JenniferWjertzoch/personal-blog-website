@@ -31,11 +31,6 @@ input[type=password] {
     width: 100%;
 }
 
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
 /* Define the modal */
 .modal {
     background-color: rgba(0, 0, 0, 0.8);
@@ -57,8 +52,20 @@ input[type=password] {
     width: 100%;
 }
 
+.modal-content:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.modal-content label {
+    font-weight: bold;
+}
+
 /* Define the close button*/
 .close {
+    background: none;
+    border: 0;
     color: #FFF;
     font-size: 40px;
     font-weight: bold;
@@ -74,14 +81,9 @@ input[type=password] {
     cursor: pointer;
 }
 
-.clearfix::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
 @media screen and (min-width: 767px) {
     .modal-content {
+        padding: 15px;
         width: 50%;
     }
 
