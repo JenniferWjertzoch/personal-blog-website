@@ -9,6 +9,7 @@ body {
     color: #223;
     font: 400 1.125rem/1.6 Fijalla One, sans-serif;
     margin: 0;
+    /* Alphabetical order 😏 */
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -16,11 +17,14 @@ body {
 }
 
 main {
+    /* Using this on the whole main element, can't be right */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
+/* I don't get why you put all of the following styling in a file called
+layout.css. There are a lot of styles which aren't related to layout. */
 h1,
 h2,
 h3 {
@@ -56,6 +60,7 @@ p {
     background: #EEE;
     border: 1px solid #223;
     border-radius: 50px;
+    /* See comment on .menu-icon in the header.css */
     cursor: pointer;
     font-size: 0.875rem;
     padding: 0.563rem 1.563rem;
@@ -75,6 +80,7 @@ main .card {
 .card {
     background: #FFF;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    /* You add default behaviour with this, so it shouldn't be necessary */
     display: flex;
     flex-direction: column;
     margin: 1.25rem;
@@ -90,6 +96,7 @@ main .card {
     border-top-right-radius: 0.25rem;
     filter: contrast(70%);
     height: 225px;
+    /* Why do you need this? */
     overflow: hidden;
     width: 100%;
 }
@@ -103,6 +110,7 @@ main .card {
     background-color: #223;
     border: 1px solid #223;
     color: #CF6;
+    /* This is the default */
     cursor: pointer;
     font-size: 1rem;
     padding: 0.563rem 1.563rem;

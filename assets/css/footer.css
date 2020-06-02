@@ -1,7 +1,9 @@
 footer {
     background-color: #999;
+    /* Is it possible to see this? At least I can't 🤔 */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     font: bold 14px sans-serif;
+    /* Alphabetical order 😉 */
     padding: 3.438rem 3.125rem;
     margin-top: 5rem;
 }
@@ -39,6 +41,7 @@ footer {
 }
 
 .footer-right a {
+    /* cursor: pointer is the default for every link, so no need to add it */
     cursor: pointer;
     display: inline-block;
     height: auto;
@@ -47,6 +50,10 @@ footer {
     width: 30px;
 }
 
+/* Why do you put the hover on the path? Did you try to get the effect on the
+Insta logo? It's almost impossible, because you need to hover the path. Putting
+the hover on the link should be the preferred solution, because this is what you
+want to visualize */
 .footer-right svg path:hover {
     fill: #CF6;
     transition: all 0.3s ease 0s;
