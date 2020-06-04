@@ -12,7 +12,6 @@ input[type=password] {
 .signupbtn {
     background-color: #EEE;
     color: #223;
-    cursor: pointer;
     padding: 14px 20px;
     width: 100%;
 }
@@ -41,6 +40,7 @@ input[type=password] {
     padding-top: 60px;
     position: fixed;
     top: 0;
+    transition: all 0.3s ease 0s;
     width: 100%;
     z-index: 1;
 }
@@ -49,6 +49,7 @@ input[type=password] {
     background-color: #FFF;
     border: 1px solid #999;
     margin: 5% auto 15% auto;
+    padding: 15px;
     width: 100%;
 }
 
@@ -78,12 +79,10 @@ input[type=password] {
 .close:hover,
 .close:focus {
     color: #CF6;
-    cursor: pointer;
 }
 
 @media screen and (min-width: 767px) {
     .modal-content {
-        padding: 15px;
         width: 50%;
     }
 

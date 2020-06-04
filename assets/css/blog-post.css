@@ -3,15 +3,6 @@
 @import 'layout.css';
 @import 'signup-modal.css';
 
-body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr 50px;
-    grid-template-areas: "header"
-                         "main"
-                         "sidebar"
-                         "footer";
-}
-
 /* Card posts */
 .card-post-1 {
     padding: 0.625rem;

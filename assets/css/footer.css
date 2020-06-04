@@ -1,6 +1,5 @@
 footer {
     background-color: #999;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     font: bold 14px sans-serif;
     padding: 3.438rem 3.125rem;
     margin-top: 5rem;
@@ -39,7 +38,6 @@ footer {
 }
 
 .footer-right a {
-    cursor: pointer;
     display: inline-block;
     height: auto;
     margin-right: 10px;
